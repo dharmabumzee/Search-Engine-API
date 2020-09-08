@@ -6,10 +6,9 @@ const ResultsList = ({ results }) => {
       {results.map((result, index) => {
         if (result.FirstURL)
           return (
-            <a href={result.FirstURL} className="search-results">
+            <a href={result.FirstURL} className="search-results" key={index}>
               <li
                 className="animate__animated animate__fadeIn ui list item"
-                key={index}
                 dangerouslySetInnerHTML={{ __html: result.Result }}
               />
             </a>

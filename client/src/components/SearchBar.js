@@ -32,7 +32,7 @@ class SearchBar extends React.Component {
     this.setState({ term: e.target.innerText });
     let query = e.target.innerText;
 
-    this.fetchData(query);
+    this.fetchData(query.toUpperCase());
   };
 
   onFormSubmit = async (event) => {
@@ -45,7 +45,7 @@ class SearchBar extends React.Component {
 
     const { term } = this.state;
 
-    let query = term;
+    let query = term.toUpperCase();
 
     this.fetchData(query);
   };
