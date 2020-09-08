@@ -277,15 +277,95 @@ form {
     height: 50px;
   }
   .container {
-    margin-top: 34%;
+    margin-top: 34% !important;
   }
   .menu-menu--full {
     height: 150vh;
+    width: 55vw;
+    margin-left: -50px;
   }
   .header {
     font-size: 36px !important;
   }
   .header.subtitle {
     font-size: 18px !important;
+  }
+}
+
+/* ipad media queries */
+
+/* ipad pro landscape*/
+
+@media (min-width: 1366px) and (min-height: 1024px) {
+  .container {
+    margin-top: 24% !important;
+  }
+  .menu-menu--full {
+    width: 53vw;
+  }
+}
+
+/* ipad pro portrait */
+
+@media (min-width: 1024px) and (min-height: 1366px) {
+  .container {
+    margin-top: 40% !important;
+  }
+  .menu-menu--full {
+    width: 55vw;
+  }
+}
+
+/* surface duo media queries */
+
+/* surface duo portrait */
+
+@media (min-width: 540px) and (min-height: 720px) {
+  .container {
+    margin-top: 30%;
+  }
+}
+
+/* surface duo landscape */
+
+@media (min-width: 720px) and (min-height: 540px) {
+  .container {
+    margin-top: 22%;
+  }
+}
+
+/* iphone X landscape */
+
+@media (min-width: 812px) and (min-height: 375px) {
+  .container {
+    margin-top: 14% !important;
+  }
+}
+
+/* iphone 6/7/8 Plus landscape */
+
+@media (min-width: 731px) and (min-height: 411px) {
+  .container {
+    margin-top: 15% !important;
+  }
+}
+
+/* mac book pro  */
+
+@media (min-width: 1280px) and (min-height: 800px) {
+  .container {
+    margin-top: 20% !important;
+  }
+}
+
+/* imac */
+
+@media (min-width: 2400px) and (orientation: landscape) {
+  .container {
+    margin-top: 16% !important;
+  }
+  .input {
+    width: 550px;
+    height: 50px;
   }
 }

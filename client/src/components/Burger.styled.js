@@ -45,9 +45,51 @@ export const StyledBurger = styled.button`
     }
   }
 
+  @media (min-width: 360px) and (min-height: 640px) {
+    div {
+      margin-left: -125px;
+    }
+  }
+
+  @media (min-width: 375px) {
+    div {
+      margin-left: -130px;
+    }
+  }
+
+  @media (min-width: 411px) {
+    div {
+      margin-left: -150px;
+    }
+  }
+
+  @media (min-width: 540px) and (min-height: 720px) {
+    div {
+      margin-left: -200px;
+    }
+  }
+
+  @media (min-width: 568px) and (min-height: 320px) {
+    div {
+      margin-left: -220px;
+    }
+  }
+
   @media (min-width: 600px) {
     div {
       margin-left: -260px;
+    }
+  }
+
+  @media (min-width: 720px) and (min-height: 540px) {
+    div {
+      margin-left: -290px;
+    }
+  }
+
+  @media (min-width: 731px) and (min-height: 411px) {
+    div {
+      margin-left: -300px;
     }
   }
 
@@ -56,6 +98,13 @@ export const StyledBurger = styled.button`
       margin-left: -320px;
     }
   }
+
+  @media (min-width: 812px) and (min-height: 375px) {
+    div {
+      margin-left: -340px;
+    }
+  }
+
   @media (min-width: 1024px) {
     div {
       margin-left: -440px;
@@ -68,6 +117,24 @@ export const StyledBurger = styled.button`
     }
   }
 
+  @media (min-width: 1280px) and (min-height: 800px) {
+    div {
+      margin-left: -580px;
+    }
+  }
+
+  @media (min-width: 1366px) and (min-height: 1024px) {
+    div {
+      margin-left: -620px;
+    }
+  }
+
+  @media (min-width: 1440px) and (min-height: 900px) {
+    div {
+      margin-left: -655px;
+    }
+  }
+
   @media (min-width: 1600px) {
     div {
       margin-left: -730px;
@@ -77,6 +144,24 @@ export const StyledBurger = styled.button`
   @media (min-width: 2048px) and (orientation: landscape) {
     div {
       margin-left: -950px;
+    }
+  }
+
+  @media (min-width: 2248px) and (orientation: landscape) {
+    div {
+      margin-left: -1050px;
+    }
+  }
+
+  @media (min-width: 2300px) and (orientation: landscape) {
+    div {
+      margin-left: -1100px;
+    }
+  }
+
+  @media (min-width: 2400px) and (orientation: landscape) {
+    div {
+      margin-left: -1200px;
     }
   }
 `;
