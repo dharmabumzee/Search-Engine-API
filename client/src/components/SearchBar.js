@@ -51,6 +51,8 @@ class SearchBar extends React.Component {
   };
 
   componentDidMount() {
+    localStorage.clear();
+    sessionStorage.clear();
     this.searchData = JSON.parse(localStorage.getItem("search"));
 
     if (localStorage.getItem("search")) {
