@@ -255,10 +255,37 @@ form {
   }
 }
 
-/* ipad */
+/* ipad landscape */
 @media (min-width: 1024px) and (min-height: 768px) {
   .input {
     width: 450px;
     height: 50px;
+  }
+  .container {
+    margin-top: 22%;
+  }
+  .menu-menu--full {
+    height: 150vh;
+  }
+}
+
+/* ipad portrait */
+
+@media (min-width: 768px) and (min-height: 1024px) {
+  .input {
+    width: 300px;
+    height: 50px;
+  }
+  .container {
+    margin-top: 34%;
+  }
+  .menu-menu--full {
+    height: 150vh;
+  }
+  .header {
+    font-size: 36px !important;
+  }
+  .header.subtitle {
+    font-size: 18px !important;
   }
 }
