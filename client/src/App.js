@@ -24,7 +24,7 @@ class App extends React.Component {
         <div className="ui container App column">
           <h1 className="ui header">
             <a href="/" className="home">
-              DuckDuckGo
+              TinyLlama
             </a>
           </h1>
           <h6 className="ui header subtitle">
