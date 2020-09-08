@@ -26,8 +26,28 @@ main {
 .search {
   margin: 5%;
 }
+
 .item {
   margin: 7% 10% 10% 10%;
+  padding: 5px !important;
+  border-radius: 4px;
+}
+
+li {
+  line-height: 22px;
+}
+
+li:hover {
+  background-color: #2d2d2d;
+}
+
+a {
+  color: #8ad0f8;
+  margin-right: 6px;
+}
+
+.results {
+  margin: 2.5rem;
 }
 
 .found {
@@ -45,9 +65,13 @@ main {
   color: #eeeeee !important;
 }
 
-.item:hover,
+.search-results {
+  text-decoration: none !important;
+}
+
+/* .item:hover, */
 a:hover {
-  color: #678fff !important;
+  color: #8ab4f8;
 }
 
 a:hover {
@@ -225,5 +249,3 @@ form {
     font-size: 18px !important;
   }
 }
-
-/* and (orientation: landscape) */
