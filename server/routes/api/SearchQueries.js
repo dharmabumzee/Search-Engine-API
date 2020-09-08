@@ -8,7 +8,6 @@ module.exports = (app) => {
 
       query = req.body.query
 
-      console.log(query);
       res.send(`Received POST request. Query: ${query}`,
   );
 });
