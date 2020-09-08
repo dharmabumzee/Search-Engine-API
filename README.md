@@ -10,4 +10,4 @@ Search App made with ReactJS and ExpressJS using DuckDuckGo API
 
 
 
-![DuckDuckGo](https://media.giphy.com/media/jQWGb4mnT93KTOkG1M/giphy.gif)
+![DuckDuckGo](https://media.giphy.com/media/RiDVJllDTlyfftHH9G/giphy.gif)
