@@ -13,6 +13,7 @@ module.exports = (app) => {
 });
  
     app.get('/api', (req, res) => {
+<<<<<<< Updated upstream
            fetch(`https://api.duckduckgo.com/?q=${query}&format=json&pretty=1`)
             .then((res) => res.json())
             .then(json => {
@@ -20,3 +21,12 @@ module.exports = (app) => {
             })
       });
 }
+=======
+      fetch(`https://api.duckduckgo.com/?q=${query}&format=json&pretty=1`)
+      .then((res) => res.json())
+      .then(json => {
+        res.json(json.RelatedTopics)
+      })
+    });
+}
+>>>>>>> Stashed changes

@@ -19,7 +19,7 @@ class App extends React.Component {
 
   render() {
     const { results } = this.state;
-
+    console.log(results);
     return (
       <div className="main">
         <div className="ui container App column">
