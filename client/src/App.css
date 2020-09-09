@@ -33,6 +33,10 @@ main {
   border-radius: 4px;
 }
 
+.item:hover {
+  color: #8ab4f8 !important;
+}
+
 li {
   line-height: 22px;
 }
