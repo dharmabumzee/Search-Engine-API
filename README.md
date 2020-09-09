@@ -1,4 +1,4 @@
-# Search App
+# TinyLlama
 Search App made with ReactJS and ExpressJS using DuckDuckGo API
 
 ##
