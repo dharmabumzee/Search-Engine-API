@@ -4,6 +4,16 @@ module.exports = (app) => {
 
   let query;
 
+  function filterResults(content) {
+    return content.reduce((acc, cur) => {
+      for ( [key, value] of Object.entries(cur)) {
+        if ( !acc[key] ) acc[key] = [];
+        acc[key].push(cur[key]);
+      }
+      return acc;
+    }, {});
+  }
+
   app.post('/api', (req, res) => {
 
       query = req.body.query
@@ -16,8 +26,7 @@ module.exports = (app) => {
       fetch(`https://api.duckduckgo.com/?q=${query}&format=json&pretty=1`)
       .then((res) => res.json())
       .then(json => {
-        res.json(json.RelatedTopics)
-      })
+            res.json(filterResults(json.RelatedTopics).Result)
+          })
     });
 }
-
