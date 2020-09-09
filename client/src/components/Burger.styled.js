@@ -141,25 +141,55 @@ export const StyledBurger = styled.button`
     }
   }
 
+  @media (min-width: 1700px) {
+    div {
+      margin-left: -800px;
+    }
+  }
+
+  @media (min-width: 1800px) {
+    div {
+      margin-left: -820px;
+    }
+  }
+
+  @media (min-width: 1900px) {
+    div {
+      margin-left: -870px;
+    }
+  }
+
   @media (min-width: 2048px) and (orientation: landscape) {
     div {
       margin-left: -950px;
     }
   }
 
-  @media (min-width: 2248px) and (orientation: landscape) {
+  @media (min-width: 2200px) and (orientation: landscape) {
+    div {
+      margin-left: -1000px;
+    }
+  }
+
+  @media (min-width: 2300px) and (orientation: landscape) {
     div {
       margin-left: -1050px;
     }
   }
 
-  @media (min-width: 2300px) and (orientation: landscape) {
+  @media (min-width: 2350px) and (orientation: landscape) {
     div {
       margin-left: -1100px;
     }
   }
 
   @media (min-width: 2400px) and (orientation: landscape) {
+    div {
+      margin-left: -1150px;
+    }
+  }
+
+  @media (min-width: 2500px) and (orientation: landscape) {
     div {
       margin-left: -1200px;
     }

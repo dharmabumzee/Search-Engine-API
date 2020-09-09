@@ -73,7 +73,6 @@ a {
   text-decoration: none !important;
 }
 
-/* .item:hover, */
 a:hover {
   color: #8ab4f8;
 }
@@ -219,7 +218,6 @@ form {
 }
 
 .home:hover {
-  /* color: #87cef5 !important; */
   text-decoration: none;
 }
 
@@ -248,9 +246,6 @@ form {
     width: 550px;
     height: 50px;
   }
-  .container {
-    margin-top: 12%;
-  }
   .header {
     font-size: 36px !important;
   }
@@ -266,7 +261,7 @@ form {
     height: 50px;
   }
   .container {
-    margin-top: 22%;
+    margin-top: 30% !important;
   }
   .menu-menu--full {
     height: 150vh;
@@ -360,9 +355,25 @@ form {
   .container {
     margin-top: 20% !important;
   }
+  .input {
+    width: 450px !important;
+    height: 50px !important;
+  }
 }
 
-/* imac */
+@media (min-width: 1600px) {
+  .input {
+    width: 450px !important;
+    height: 50px !important;
+  }
+}
+
+@media (min-width: 2048px) and (orientation: landscape) {
+  .input {
+    width: 550px !important;
+    height: 50px !important;
+  }
+}
 
 @media (min-width: 2400px) and (orientation: landscape) {
   .container {
