@@ -12,12 +12,7 @@ const Menu = ({ style, children, handleOnClick, setOpen }) => (
         return (
           <div className="content" key={index}>
             <li className="ui list recent" key={index}>
-              <a
-                className="content"
-                href="/"
-                onClick={() => setOpen(false)}
-                id="my-form"
-              >
+              <a className="content" href="/" onClick={() => setOpen(false)}>
                 <div className="box-item" onClick={handleOnClick}>
                   {item}
                 </div>

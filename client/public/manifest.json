@@ -1,6 +1,6 @@
 {
-  "short_name": "DuckGo",
-  "name": "DuckDuckGo-API",
+  "short_name": "TinyLlama",
+  "name": "TinyLlama",
   "start_url": ".",
   "display": "standalone"
 }

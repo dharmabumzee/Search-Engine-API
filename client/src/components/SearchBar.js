@@ -45,22 +45,16 @@ class SearchBar extends React.Component {
       searchedQueries: [...this.state.searchedQueries, this.state.term],
     });
 
-    const { term } = this.state;
+    let { term } = this.state;
     this.fetchData(term.toUpperCase());
   };
 
   componentDidMount() {
     this.searchData = JSON.parse(localStorage.getItem("search"));
 
-    if (localStorage.getItem("search")) {
-      this.setState({
-        searchedQueries: this.searchData.searchedQueries,
-      });
-    } else {
-      this.setState({
-        searchedQueries: [],
-      });
-    }
+    localStorage.getItem("search")
+      ? this.setState({ searchedQueries: this.searchData.searchedQueries })
+      : this.setState({ searchedQueries: [] });
   }
 
   // replace with getSnapshotBeforeUpdate()
