@@ -4,6 +4,13 @@ import MenuFullSlide from "./MenuFullSlide";
 class SearchBar extends React.Component {
   searchData;
 
+  state = {
+    term: "",
+    searchedQueries: [],
+    responseToPost: "",
+  };
+
+  // function for api call on user input
   async fetchData(query) {
     const response = await fetch(`http://localhost:5001/api/`, {
       method: "POST",
@@ -20,12 +27,6 @@ class SearchBar extends React.Component {
     this.props.onSubmit(this.props.term);
   }
 
-  state = {
-    term: "",
-    searchedQueries: [],
-    responseToPost: "",
-  };
-
   // handles onClick in search history to repeat API request and populate the search input
   handleOnClick = async (e) => {
     e.preventDefault();
@@ -35,6 +36,7 @@ class SearchBar extends React.Component {
     this.fetchData(query.toUpperCase());
   };
 
+  // handles form submit
   onFormSubmit = async (event) => {
     event.preventDefault();
     this.props.onSubmit(this.props.term);
@@ -44,10 +46,7 @@ class SearchBar extends React.Component {
     });
 
     const { term } = this.state;
-
-    let query = term.toUpperCase();
-
-    this.fetchData(query);
+    this.fetchData(term.toUpperCase());
   };
 
   componentDidMount() {
@@ -72,16 +71,10 @@ class SearchBar extends React.Component {
   render() {
     return (
       <div className="ui category fluid search">
-        <form
-          onSubmit={this.onFormSubmit}
-          endpoint="query"
-          method="post"
-          id="my-form"
-        >
+        <form onSubmit={this.onFormSubmit} endpoint="query" method="post">
           <div className="ui icon input">
             <input
               className="prompt"
-              id="query"
               name="q"
               type="search"
               value={this.state.term}
@@ -95,7 +88,6 @@ class SearchBar extends React.Component {
               required
               autoComplete="off"
               onClick={(e) => this.setState({ term: "" })}
-              ref={this.inputRef}
             />
 
             <i className="search icon"></i>

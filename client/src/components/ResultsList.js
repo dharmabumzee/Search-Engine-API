@@ -3,7 +3,7 @@ import React from "react";
 const ResultsList = ({ results }) => {
   const extractUrl = /.*href="(.*)".*/; // .replace
 
-  const extractContent = /<a[^>]*>.*<\/a>/gm; // .replace
+  const extractContent = /<a[^>]*>.*<\/a>/gm; // .replace , ""
 
   const extractTitle = /<a [^>]+>([^<]+)<\/a>/; // .match
 
