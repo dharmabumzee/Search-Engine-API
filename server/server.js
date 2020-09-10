@@ -2,6 +2,7 @@ const express = require('express')
 const cors = require('cors');
 const morgan = require('morgan')
 const bodyParser = require('body-parser');
+const path = require('path');
 
 const app = express();
 const port = 5001;
@@ -13,6 +14,10 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 require('./routes')(app);
+
+app.get('/', function (req, res) {
+  res.send('TinyLlama!')
+})
 
 function notFound(req, res, next) {
   res.status(404);
@@ -29,6 +34,14 @@ function errorHandler(error, req, res, next) {
 
 app.use(notFound);
 app.use(errorHandler);
+
+
+app.use(express.static(path.join(__dirname, 'client/build')));
+
+app.get('*', function(req, res) {
+  res.sendFile(path.join(__dirname+'/client/build/index.html'));
+});
+
 
 app.listen(port, () => {
   console.log(new Date() + ` Express server running on http://localhost:${port} `)

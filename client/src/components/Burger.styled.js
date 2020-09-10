@@ -131,7 +131,7 @@ export const StyledBurger = styled.button`
 
   @media (min-width: 1440px) and (min-height: 900px) {
     div {
-      margin-left: -655px;
+      margin-left: -675px;
     }
   }
 

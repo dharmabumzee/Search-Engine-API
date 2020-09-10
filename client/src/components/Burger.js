@@ -5,9 +5,9 @@ import { StyledBurger } from "./Burger.styled";
 const Burger = ({ open, setOpen }) => {
   return (
     <StyledBurger open={open} onClick={() => setOpen(false)}>
-      <div />
-      <div />
-      <div />
+      <div className="burger-color" />
+      <div className="burger-color" />
+      <div className="burger-color" />
     </StyledBurger>
   );
 };

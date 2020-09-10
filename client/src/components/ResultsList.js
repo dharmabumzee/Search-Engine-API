@@ -17,9 +17,17 @@ const ResultsList = ({ results }) => {
               className="search-results"
               key={index}
             >
-              <li className="animate__animated animate__fadeIn ui list item">
-                {result.match(extractTitle)[1]}
-              </li>
+              <li
+                className="animate__animated animate__fadeIn ui list item"
+                dangerouslySetInnerHTML={{
+                  __html: result,
+                }}
+              />
+              {/* {result.match(extractTitle)[1]}
+                <p className="content-content">
+                  {result.replace(extractContent, "")}
+                </p>
+              </li> */}
             </a>
           );
         })}

@@ -2,6 +2,7 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://tinyllama.netlify.app",
   "proxy": "http://localhost:5001/",
   "dependencies": {
     "@material-ui/core": "^4.11.0",
@@ -10,6 +11,7 @@
     "@testing-library/user-event": "^7.2.1",
     "animate.css": "^4.1.0",
     "axios": "^0.20.0",
+    "grommet": "^2.15.0",
     "history": "^5.0.0",
     "http-proxy-middleware": "^1.0.5",
     "morgan": "^1.10.0",
