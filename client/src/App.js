@@ -1,38 +1,11 @@
 import React from "react";
 import axios from "axios";
-import { Box, Grommet, Clock } from "grommet";
 
 import "./App.css";
 
 import SearchBar from "./components/SearchBar";
 import ResultsList from "./components/ResultsList";
-
-const analogClockTheme = {
-  clock: {
-    analog: {
-      size: {
-        medium: "100px",
-      },
-      hour: {
-        width: "3px",
-        shape: "round",
-        color: "#5c0029",
-        size: "34px",
-      },
-      minute: {
-        size: "18px",
-        width: "3px",
-        color: "#53687e",
-        shape: "round",
-      },
-      second: {
-        width: "1px",
-        color: "#31a1bdf3",
-        size: "10px",
-      },
-    },
-  },
-};
+import AnalogClock from "./components/AnalogClock";
 
 class App extends React.Component {
   state = {
@@ -51,11 +24,6 @@ class App extends React.Component {
 
     return (
       <div className="main">
-        <Grommet theme={analogClockTheme}>
-          <Box align="end" justify="end" pad="xxsmall">
-            <Clock type="analog" size="medium" alignSelf="end" />
-          </Box>
-        </Grommet>
         <div className="ui container App column">
           <h1 className="ui header">
             <a href="/" className="home">

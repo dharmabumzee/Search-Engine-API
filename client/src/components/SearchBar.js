@@ -80,10 +80,10 @@ class SearchBar extends React.Component {
               }
               autoFocus
               required
+              inputMode="search"
               autoComplete="off"
               onClick={(e) => this.setState({ term: "" })}
             />
-
             <i className="search icon"></i>
           </div>
         </form>

@@ -400,7 +400,7 @@ form {
 
 @media (min-width: 1280px) and (min-height: 800px) {
   .container {
-    margin-top: 20% !important;
+    margin-top: 18% !important;
   }
   .input {
     width: 450px !important;

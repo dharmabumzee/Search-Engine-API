@@ -18,7 +18,7 @@ const ResultsList = ({ results }) => {
               key={index}
             >
               <li
-                className="animate__animated animate__fadeIn ui list item"
+                className="ui list item" // animate__animated animate__fadeIn
                 dangerouslySetInnerHTML={{
                   __html: result,
                 }}
