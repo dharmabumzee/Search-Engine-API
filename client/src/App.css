@@ -1,6 +1,4 @@
 body {
-  /* background-color: #1c1c1c; */
-  /* background-color: #c6ecae; */
   background: rgb(222, 247, 206);
   background: linear-gradient(
     184deg,
@@ -51,6 +49,10 @@ main {
   box-shadow: inset 0 0 30px #d1ccca;
 }
 
+.box-item {
+  color: #777da7 !important;
+}
+
 .item:active {
   color: #fac05e !important;
 }
@@ -93,8 +95,6 @@ a {
 }
 
 .header {
-  /* color: #eeeeee !important; */
-  /* color: #777da7 !important; */
   color: #53687e !important;
 }
 
@@ -418,7 +418,8 @@ form {
     font-size: 46px !important;
   }
   .menu-menu--full {
-    width: 45vw;
+    width: 47vw;
+    margin-left: -10px;
   }
   .subtitle {
     opacity: 0.7;

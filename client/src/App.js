@@ -14,7 +14,7 @@ const analogClockTheme = {
         medium: "100px",
       },
       hour: {
-        width: "4px",
+        width: "3px",
         shape: "round",
         color: "#5c0029",
         size: "34px",
