@@ -27,12 +27,11 @@ function MenuFullSlide({ children, handleOnClick }) {
           onClick={() => {
             setOpen(!open);
           }}
-          className="menu-menu-button menu-menu-button--full menu-menu menu"
+          className="menu-menu-button menu-menu-button--full menu-menu"
         />
       </button>
 
       <Menu
-        className="menu-color"
         style={fullMenuAnimation}
         children={children}
         handleOnClick={handleOnClick}
