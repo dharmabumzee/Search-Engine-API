@@ -10,7 +10,7 @@ Search App made with ReactJS and ExpressJS using DuckDuckGo API
 ### Redesign
 
 ![TinyLlama](https://media.giphy.com/media/lTXgRlzIEsS5V36oiG/giphy.gif)
-
+![TinyLlama](https://media.giphy.com/media/f47KTyCRsCjBcmBFnM/giphy.gif)
  
 ### First deploy
 ![TinyLlama](https://media.giphy.com/media/l24dpknkIAY00lkcyv/giphy.gif) 
