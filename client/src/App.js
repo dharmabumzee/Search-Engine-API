@@ -33,7 +33,7 @@ class App extends React.Component {
             Search the web without being tracked
           </h6>
           <SearchBar onSubmit={this.onSearchSubmit} />
-          <ResultsList results={results} ref={this.targetRef} />
+          <ResultsList results={results} />
         </div>
       </div>
     );
