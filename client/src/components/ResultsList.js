@@ -14,7 +14,7 @@ const ResultsList = ({ results }) => {
           return (
             <a
               href={result.replace(extractUrl, "$1")}
-              className="search-results"
+              className="animate__animated animate__fadeIn search-results"
               key={index}
             >
               <li
