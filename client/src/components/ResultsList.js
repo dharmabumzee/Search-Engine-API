@@ -8,17 +8,17 @@ const ResultsList = ({ results }) => {
   const extractTitle = /<a [^>]+>([^<]+)<\/a>/; // .match
 
   return (
-    <div className="results">
+    <div className="animate__animated animate__fadeIn results result-list">
       {results &&
         results.map((result, index) => {
           return (
             <a
               href={result.replace(extractUrl, "$1")}
-              className="search-results"
+              className="animate__animated animate__fadeIn search-results"
               key={index}
             >
               <li
-                className="ui list item" // animate__animated animate__fadeIn
+                className="animate__animated animate__fadeIn ui list item"
                 dangerouslySetInnerHTML={{
                   __html: result,
                 }}

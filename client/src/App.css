@@ -37,18 +37,6 @@ main {
   margin: 5%;
 }
 
-.item {
-  /* color: #777da7 !important; */
-  /* color: #53687e; */
-  margin: 7% 10% 10% 10%;
-  padding: 5px !important;
-  border-radius: 4px;
-  font-family: "Open Sans", sans-serif;
-  -moz-box-shadow: inset 0 0 30px #d1ccca;
-  -webkit-box-shadow: inset 0 0 30px#d1ccca;
-  box-shadow: inset 0 0 30px #d1ccca;
-}
-
 .box-item {
   color: #777da7 !important;
 }
@@ -78,9 +66,14 @@ a {
   color: #8ad0f8;
   margin-right: 6px;
 }
-
-.results {
-  margin: 2.5rem;
+.item {
+  margin: 7% 10% 10% 10%;
+  padding: 5px !important;
+  border-radius: 4px;
+  font-family: "Open Sans", sans-serif;
+  -webkit-box-shadow: inset 0 0 30px#d1ccca;
+  box-shadow: inset 0 0 30px #d1ccca;
+  -moz-box-shadow: inset 0 0 30px #d1ccca;
 }
 
 .found {
@@ -104,6 +97,10 @@ a {
 
 .search-results {
   text-decoration: none !important;
+}
+
+.results {
+  margin: 2.5rem;
 }
 
 a:hover {
@@ -151,7 +148,6 @@ a:hover {
   color: #444140 !important;
   z-index: 30;
   cursor: pointer;
-  /* box-shadow: 2px 4px 2px #f5ebe8; */
   -moz-box-shadow: inset 0 0 8px #d1ccca;
   -webkit-box-shadow: inset 0 0 8px#d1ccca;
   box-shadow: inset 0 0 8px #d1ccca;
@@ -165,8 +161,8 @@ a:hover {
   border-bottom-right-radius: 14px;
   top: 0;
   display: flex;
-  flex-wrap: wrap;
-  flex-basis: 33%;
+  /* flex-wrap: wrap; */
+  /* flex-basis: 33%; */
   justify-content: center;
   color: #5c0029 !important;
 }
@@ -190,10 +186,10 @@ a:hover {
   color: #885053;
 }
 
-.menu-menu a:hover,
+/* .menu-menu a:hover,
 .menu-menu a:focus {
   color: #c597d8;
-}
+} */
 
 .menu-menu-button {
   z-index: 40;
@@ -246,8 +242,6 @@ form {
   flex-direction: row;
 }
 
-/* media queries */
-
 .home {
   /* color: #eeeeee !important; */
   color: #5c0029 !important;
@@ -264,6 +258,8 @@ form {
 .prompt:focus {
   border-color: #5c0029 !important;
 }
+
+/* media queries */
 
 @media (min-width: 540px) {
   .menu-menu--full {
@@ -298,6 +294,15 @@ form {
   }
 }
 
+/* iphone 6 */
+
+@media (min-width: 360px) {
+  .results {
+    margin-right: 3.5rem;
+    margin-left: 3.5rem;
+  }
+}
+
 /* ipad landscape */
 @media (min-width: 1024px) and (min-height: 768px) {
   .input {
@@ -308,7 +313,7 @@ form {
     margin-top: 30% !important;
   }
   .menu-menu--full {
-    height: 150vh;
+    height: 70vh;
   }
 }
 
@@ -370,6 +375,10 @@ form {
   .container {
     margin-top: 30%;
   }
+  .results {
+    margin-right: 4rem;
+    margin-left: 4rem;
+  }
 }
 
 /* surface duo landscape */
@@ -422,6 +431,9 @@ form {
   .input {
     width: 450px !important;
     height: 50px !important;
+  }
+  .menu-menu--full {
+    height: 60vh;
   }
 }
 
