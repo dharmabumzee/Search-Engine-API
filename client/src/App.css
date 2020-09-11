@@ -10,25 +10,37 @@ body {
     rgba(233, 249, 247, 1) 74%,
     rgba(222, 247, 206, 1) 94%
   );
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 main {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   height: 100vh;
 }
 
 .App {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
   text-align: center;
   margin: 30px;
   height: 100vh;
-  /* overflow-y: auto; */
+  overflow-y: auto;
 }
 
 .column {
@@ -73,9 +85,9 @@ a {
   padding: 5px !important;
   border-radius: 4px;
   font-family: "Open Sans", sans-serif;
-  -webkit-box-shadow: inset 0 0 30px#d1ccca;
+  /* -webkit-box-shadow: inset 0 0 30px #d1ccca; */
   box-shadow: inset 0 0 30px #d1ccca;
-  -moz-box-shadow: inset 0 0 30px #d1ccca;
+  /* -moz-box-shadow: inset 0 0 30px #d1ccca; */
 }
 
 .found {
@@ -150,9 +162,9 @@ a:hover {
   color: #444140 !important;
   z-index: 30;
   cursor: pointer;
-  -moz-box-shadow: inset 0 0 8px #d1ccca;
   -webkit-box-shadow: inset 0 0 8px#d1ccca;
   box-shadow: inset 0 0 8px #d1ccca;
+  -moz-box-shadow: inset 0 0 8px #d1ccca;
 }
 
 .menu-menu--full {
@@ -179,6 +191,10 @@ a:hover {
 .menu-menu-list-item--full {
   font-size: 1em;
   margin: 40px 0;
+  -webkit-transform: rotate(1200deg);
+
+  -ms-transform: rotate(1200deg);
+
   transform: rotate(1200deg);
 }
 
@@ -202,6 +218,10 @@ a:hover {
   font-size: 1em;
   background: #fbf2ff;
   color: #692969 !important;
+  -webkit-transition: background 0.1s linear;
+
+  -o-transition: background 0.1s linear;
+
   transition: background 0.1s linear;
   cursor: pointer;
 }
@@ -219,15 +239,6 @@ a.content {
 
 button {
   -webkit-tap-highlight-color: transparent !important;
-}
-
-@keyframes bar {
-  0% {
-    background-position: 0%;
-  }
-  100% {
-    background-position: 200%;
-  }
 }
 
 form {

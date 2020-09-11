@@ -1,8 +1,14 @@
 import styled from "styled-components";
 
 export const StyledBurger = styled.button`
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   justify-content: space-around;
   width: 2rem;
@@ -25,8 +31,12 @@ export const StyledBurger = styled.button`
     height: 0.25rem;
     background: ${({ open }) => (open ? "#5c0029" : "#5c0029")};
     border-radius: 10px;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
     transition: all 0.3s linear;
     position: relative;
+    -webkit-transform-origin: 1px;
+    -ms-transform-origin: 1px;
     transform-origin: 1px;
     margin-left: -114px;
     margin-top: -1439px;
@@ -60,6 +70,12 @@ export const StyledBurger = styled.button`
   @media (min-width: 411px) {
     div {
       margin-left: -150px;
+    }
+  }
+
+  @media (min-width: 500px) {
+    div {
+      margin-left: -190px;
     }
   }
 
