@@ -12,7 +12,7 @@ class SearchBar extends React.Component {
 
   // function for api call on user input
   async fetchData(query) {
-    const response = await fetch(`http://localhost:5001/api/`, {
+    const response = await fetch(`/api/`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -30,8 +30,8 @@ class SearchBar extends React.Component {
   // handles onClick in search history to repeat API request and populate the search input
   handleOnClick = async (e) => {
     e.preventDefault();
-    this.setState({ term: e.target.innerText });
-    let query = e.target.innerText;
+    this.setState({ term: e.target.textContent });
+    let query = e.target.textContent;
 
     this.fetchData(query.toUpperCase());
   };
