@@ -5,7 +5,6 @@ import "./App.css";
 
 import SearchBar from "./components/SearchBar";
 import ResultsList from "./components/ResultsList";
-import AnalogClock from "./components/AnalogClock";
 
 class App extends React.Component {
   state = {
@@ -14,7 +13,7 @@ class App extends React.Component {
 
   onSearchSubmit = async () => {
     await axios
-      .get(`http://localhost:5001/api`)
+      .get(`/api`)
       .then((res) => this.setState({ results: res.data }))
       .catch((error) => console.log(error));
   };
@@ -34,7 +33,7 @@ class App extends React.Component {
             Search the web without being tracked
           </h6>
           <SearchBar onSubmit={this.onSearchSubmit} />
-          <ResultsList results={results} />
+          <ResultsList results={results} ref={this.targetRef} />
         </div>
       </div>
     );

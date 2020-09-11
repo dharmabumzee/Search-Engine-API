@@ -34,6 +34,7 @@ class SearchBar extends React.Component {
     let query = e.target.textContent;
 
     this.fetchData(query.toUpperCase());
+    window.scrollTo(0, 0);
   };
 
   // handles form submit
@@ -48,6 +49,12 @@ class SearchBar extends React.Component {
     let { term } = this.state;
     this.fetchData(term.toUpperCase());
   };
+
+  handleEnter(e) {
+    if (e.keyCode === 13) {
+      e.target.blur();
+    }
+  }
 
   componentDidMount() {
     this.searchData = JSON.parse(localStorage.getItem("search"));
@@ -65,7 +72,12 @@ class SearchBar extends React.Component {
   render() {
     return (
       <div className="ui category fluid search">
-        <form onSubmit={this.onFormSubmit} endpoint="query" method="post">
+        <form
+          onSubmit={this.onFormSubmit}
+          endpoint="query"
+          method="post"
+          id="form"
+        >
           <div className="ui icon input">
             <input
               className="prompt"
@@ -78,11 +90,12 @@ class SearchBar extends React.Component {
                   term: e.target.value,
                 })
               }
-              autoFocus
               required
+              form="form"
               inputMode="search"
               autoComplete="off"
               onClick={(e) => this.setState({ term: "" })}
+              onKeyUp={(e) => this.handleEnter(e)}
             />
             <i className="search icon"></i>
           </div>
