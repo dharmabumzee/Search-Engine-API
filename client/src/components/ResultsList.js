@@ -1,5 +1,4 @@
 import React from "react";
-import { enableBodyScroll } from "body-scroll-lock";
 
 const ResultsList = ({ results }) => {
   const extractUrl = /.*href="(.*)".*/; // .replace
