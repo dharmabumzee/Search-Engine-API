@@ -12,10 +12,12 @@ class SearchBar extends React.Component {
 
   // function for api call on user input
   async fetchData(query) {
-    const response = await fetch(`http://localhost:5001/api/`, {
+    const response = await fetch("http://localhost:5001/api/", {
       method: "POST",
+      mode: "cors",
       headers: {
         "Content-Type": "application/json",
+        "Access-Control-Allow-Origin": "*",
       },
       body: JSON.stringify({ query }),
     });
