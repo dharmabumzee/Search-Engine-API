@@ -4,7 +4,7 @@ module.exports = function (app) {
   app.use(
     ["/api", "auth/google"],
     createProxyMiddleware({
-      target: "https://tinyllama.dharmabumzee.vercel.app/",
+      target: "http://localhost:5001",
       changeOrigin: true,
     })
   );

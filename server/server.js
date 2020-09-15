@@ -8,7 +8,7 @@ const { createProxyMiddleware } = require('http-proxy-middleware')
 const app = express();
 const port = 5001;
 
-app.use('/api', createProxyMiddleware({ target: 'https://tinyllama.dharmabumzee.vercel.app/', changeOrigin: true }));
+// app.use('/api', createProxyMiddleware({ target: 'https://tinyllama.dharmabumzee.vercel.app/', changeOrigin: true }));
 
 
 app.use(morgan('tiny'));
