@@ -19,7 +19,7 @@ app.use(bodyParser.json());
 
 require('./routes')(app);
 
-app.get('/', function (req, res) {
+app.get('/', cors(), function (req, res) {
   res.send('TinyLlama!')
 })
 
@@ -42,7 +42,7 @@ app.use(errorHandler);
 
 app.use(express.static(path.join(__dirname, "client", "build")));
 
-app.get('/*', (req, res) => {
+app.get('/*', cors(), (req, res) => {
   res.sendFile(path.join(__dirname, "client", "build", "index.html"));
 });
 
