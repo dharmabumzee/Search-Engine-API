@@ -1,14 +1,15 @@
 {
-  "scripts": {
-    "postinstall": "cd client && npm install"
-  },
-  "name": "cial",
-  "description": "Search App made with ReactJS and ExpressJS using DuckDuckGo API",
+  "name": "tinyllama",
   "version": "1.0.0",
+  "description": "Search App made with ReactJS and ExpressJS using DuckDuckGo API",
   "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dharmabumzee/TinyLlama"
+  },
+  "scripts": {
+    "postinstall": "cd client && npm run build",
+    "start": "node server.js"
   },
   "author": "dharmabumzee",
   "license": "ISC",

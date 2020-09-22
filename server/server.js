@@ -6,7 +6,7 @@ const path = require('path');
 const { createProxyMiddleware } = require('http-proxy-middleware')
 
 const app = express();
-const port = 5001;
+const port = process.env.PORT || 5001;
 
 // app.use('/api', createProxyMiddleware({ target: 'https://tinyllama.dharmabumzee.vercel.app/', changeOrigin: true }));
 
@@ -47,6 +47,4 @@ app.get('/*', cors(), (req, res) => {
 });
 
 
-app.listen(port, () => {
-  console.log(new Date() + ` Express server running on http://localhost:${port} `)
-})
+app.listen(port);
