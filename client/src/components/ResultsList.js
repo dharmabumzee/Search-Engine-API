@@ -1,3 +1,4 @@
+import './ResultList.css';
 import React from "react";
 
 const ResultsList = ({ results }) => {

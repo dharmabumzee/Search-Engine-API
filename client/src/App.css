@@ -54,6 +54,19 @@ main {
   color: #1d3557 !important;
 }
 
+.content-link {
+  align-items: center !important;
+  align-self: center !important;
+  vertical-align: middle !important;
+}
+
+.recent:hover {
+  border: 1px solid thistle;
+  border-radius: 10px;
+  margin: -1px !important;
+  text-align: center;
+}
+
 .item:active {
   color: #fac05e !important;
 }
@@ -133,7 +146,7 @@ a:hover {
 
 @media (min-width: 600px) {
   .column {
-    width: 50% !important;
+    width: 90% !important;
   }
   .search,
   .item {
@@ -247,6 +260,11 @@ form {
 .recent-search {
   margin-top: 15px !important;
   opacity: 0.74;
+  /* margin: 5px !important; */
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 200%;
+  color: #1d3557;
 }
 
 .search-history {
@@ -290,9 +308,9 @@ textarea {
 }
 
 @media (min-width: 768px) {
-  .menu-menu--full {
+  /* .menu-menu--full {
     width: 48.5vw;
-  }
+  } */
 }
 
 @media (min-width: 1024px) {
@@ -329,9 +347,9 @@ textarea {
   .container {
     margin-top: 30% !important;
   }
-  .menu-menu--full {
+  /* .menu-menu--full {
     height: 70vh;
-  }
+  } */
 }
 
 /* ipad portrait */
@@ -344,11 +362,11 @@ textarea {
   .container {
     margin-top: 34% !important;
   }
-  .menu-menu--full {
+  /* .menu-menu--full {
     height: 150vh;
     width: 55vw;
     margin-left: -50px;
-  }
+  } */
   .header {
     font-size: 36px !important;
   }
@@ -365,9 +383,9 @@ textarea {
   .container {
     margin-top: 24% !important;
   }
-  .menu-menu--full {
+  /* .menu-menu--full {
     width: 53vw;
-  }
+  } */
 }
 
 /* ipad pro portrait */
@@ -376,9 +394,9 @@ textarea {
   .container {
     margin-top: 40% !important;
   }
-  .menu-menu--full {
+  /* .menu-menu--full {
     width: 55vw;
-  }
+  } */
   .subtitle {
     opacity: 0.7;
   }
@@ -435,10 +453,10 @@ textarea {
   .header {
     font-size: 46px !important;
   }
-  .menu-menu--full {
+  /* .menu-menu--full {
     width: 47vw;
     margin-left: -10px;
-  }
+  } */
   .subtitle {
     opacity: 0.7;
   }
@@ -449,9 +467,9 @@ textarea {
     width: 450px !important;
     height: 50px !important;
   }
-  .menu-menu--full {
+  /* .menu-menu--full {
     height: 60vh;
-  }
+  } */
 }
 
 @media (min-width: 2048px) and (orientation: landscape) {
