@@ -29,7 +29,7 @@ class SearchBar extends React.Component {
     this.props.onSubmit(this.props.term);
   }
 
-  // handles onClick in search history to repeat API request and populate the search input
+  // handles onClick in search history to repeat API request and populate the search input - refactor this react way using refs
   handleOnClick = async (e) => {
     e.preventDefault();
     this.setState({ term: e.target.textContent });
@@ -52,11 +52,11 @@ class SearchBar extends React.Component {
     this.fetchData(term.toUpperCase());
   };
 
-  handleEnter(e) {
-    if (e.keyCode === 13) {
-      e.target.blur();
-    }
-  }
+  // handleEnter(e) {
+  //   if (e.keyCode === 13) {
+  //     e.target.blur();
+  //   }
+  // }
 
   componentDidMount() {
     this.searchData = JSON.parse(localStorage.getItem("search"));
@@ -97,7 +97,7 @@ class SearchBar extends React.Component {
               inputMode="search"
               autoComplete="off"
               onClick={(e) => this.setState({ term: "" })}
-              onKeyUp={(e) => this.handleEnter(e)}
+              // onKeyUp={(e) => this.handleEnter(e)}
             />
             <i className="search icon"></i>
           </div>

@@ -310,7 +310,7 @@ textarea {
 
 @media (min-width: 768px) {
   .menu-menu--full {
-    width: 48.5vw;
+    width: 83vw;
   }
 }
 
@@ -327,6 +327,9 @@ textarea {
   }
   .header.subtitle {
     font-size: 18px !important;
+  }
+  .menu-menu--full {
+    width: 82vw !important;
   }
 }
 
@@ -496,5 +499,8 @@ textarea {
   }
   .menu-menu--full {
     margin-left: -60px;
+  }
+  .menu-menu--full {
+    width: 86vw !important;
   }
 }
