@@ -1,8 +1,6 @@
 {
   "name": "tiny-llama",
   "version": "1.0.0",
-  "start-url": ".",
-  "homepage": "https://tinyllama.vercel.app/",
   "scripts": {
     "start": "serve --single --cache=60000"
   },
