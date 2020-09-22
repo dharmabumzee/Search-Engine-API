@@ -1,0 +1,28 @@
+.query-history {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)) !important;
+  grid-gap: 10px !important;
+  text-align: center !important;
+}
+
+/* div.box-item {
+  text-align: center !important;
+  justify-content: center;
+  justify-self: center;
+  align-self: center;
+} */
+
+.recent {
+  text-align: center !important;
+  align-items: center !important;
+  align-self: center !important;
+  vertical-align: middle !important;
+  justify-content: center;
+  justify-items: center;
+}
+.nav {
+  width: 100vw;
+  margin: 5px;
+  text-align: center !important;
+  justify-content: center !important;
+}
