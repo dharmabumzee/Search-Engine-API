@@ -8,7 +8,7 @@
     "url": "git+https://github.com/dharmabumzee/TinyLlama"
   },
   "scripts": {
-    "postinstall": "cd client && npm run build",
+    "postinstall": "cd client && npm install",
     "start": "node server.js"
   },
   "author": "dharmabumzee",
