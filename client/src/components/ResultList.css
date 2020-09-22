@@ -1,0 +1,10 @@
+.result-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-gap: 10px;
+  text-align: center;
+}
+
+.result {
+  width: 220px;
+}
