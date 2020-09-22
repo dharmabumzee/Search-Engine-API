@@ -8,8 +8,16 @@
     "url": "git+https://github.com/dharmabumzee/TinyLlama"
   },
   "scripts": {
-    "postinstall": "cd client && npm install",
-    "start": "node server.js"
+    "client": "cd client && yarn start",
+    "server": "nodemon server.js",
+    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\""
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "concurrently": "^4.0.1"
   },
   "author": "dharmabumzee",
   "license": "ISC",
