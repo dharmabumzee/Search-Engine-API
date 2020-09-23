@@ -8,9 +8,9 @@
     "url": "git+https://github.com/dharmabumzee/TinyLlama"
   },
   "scripts": {
-    "client": "cd client && yarn start",
-    "server": "nodemon server.js",
-    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\""
+    "client": "cd client && npm start",
+    "server": "node server.js",
+    "dev": "concurrently --kill-others-on-fail \"npm server\" \"npm client\""
   },
   "dependencies": {
     "body-parser": "^1.18.3",
