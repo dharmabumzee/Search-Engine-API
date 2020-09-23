@@ -7,7 +7,7 @@ const { createProxyMiddleware } = require('http-proxy-middleware')
 
 const app = express();
 // app.use(express.static(path.join(__dirname, "client", "build")));
-app.use(express.static(path.join(__dirname, "build")));
+app.use(express.static(path.join(__dirname, "client", "build")));
 
 // app.use('/api', createProxyMiddleware({ target: 'https://tinyllama.dharmabumzee.vercel.app/', changeOrigin: true }));
 
@@ -27,7 +27,7 @@ require('./routes')(app);
 
 
 app.get('/*', function (req, res) {
-  res.sendFile(path.join(__dirname, 'build', 'index.html'));
+  res.sendFile(path.join(__dirname, '../client','build', 'index.html'));
 });
 
 
@@ -51,4 +51,4 @@ app.use(errorHandler);
 
 
 const port = process.env.PORT || 5001;
-app.listen(port);
+app.listen(port, console.log('Listening'));
