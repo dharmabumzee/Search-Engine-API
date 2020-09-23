@@ -13,7 +13,7 @@ class App extends React.Component {
 
   onSearchSubmit = async () => {
     await axios
-      .get("/api/")
+      .get("/")
       .then((res) => this.setState({ results: res.data }))
       .catch((error) => console.log(error));
   };

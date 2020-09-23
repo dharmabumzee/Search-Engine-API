@@ -21,7 +21,7 @@ app.use(bodyParser.json());
 require('./routes')(app);
 // app.use('/', routes);
 
-// app.get('/', cors(), function (req, res) {
+// app.get('/', function (req, res) {
 //   res.send('TinyLlama!')
 // })
 

@@ -14,7 +14,7 @@ module.exports = (app) => {
     }, {});
   }
 
-  app.post('/api', (req, res) => {
+  app.post('/', (req, res) => {
 
       query = req.body.query
 
@@ -22,7 +22,7 @@ module.exports = (app) => {
   );
 });
  
-    app.get('/api', (req, res) => {
+    app.get('/', (req, res) => {
       fetch(`https://api.duckduckgo.com/?q=${query}&format=json&pretty=1`)
       .then((res) => res.json())
       .then(json => {
