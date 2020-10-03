@@ -3,12 +3,8 @@ const cors = require('cors');
 const morgan = require('morgan')
 const bodyParser = require('body-parser');
 const path = require('path');
-const { createProxyMiddleware } = require('http-proxy-middleware')
 
 const app = express();
-
-// app.use('/api', createProxyMiddleware({ target: 'https://tinyllama.dharmabumzee.vercel.app/', changeOrigin: true }));
-
 
 app.use(morgan('tiny'));
 app.use(cors());
@@ -37,14 +33,6 @@ function errorHandler(error, req, res, next) {
 
 app.use(notFound);
 app.use(errorHandler);
-
-
-app.use(express.static(path.join(__dirname, "../client", "build")));
-
-app.get('/*', cors(), (req, res) => {
-  res.sendFile(path.join(__dirname, "../client", "build", "index.html"));
-});
-
 
 const port = process.env.PORT || 5001;
 app.listen(port, () => {
