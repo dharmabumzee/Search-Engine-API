@@ -12,6 +12,6 @@ Search App made with ReactJS and ExpressJS using DuckDuckGo API
 ![TinyLlama](https://media.giphy.com/media/Ux13fylgvxFQpzSLF6/giphy.gif)
 ![TinyLlama](https://media.giphy.com/media/Qsy4AhT94LqYPxEBRU/giphy.gif)
  
-### First deploy
+### First version
 ![TinyLlama](https://media.giphy.com/media/l24dpknkIAY00lkcyv/giphy.gif) 
 ![TinyLlama](https://media.giphy.com/media/fxTpPIf3H3pcpaixVq/giphy.gif)
